@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DataTableController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/7.jpg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="OVERLAY" fitHeight="150.0" fitWidth="200.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/8.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableView" layoutX="56.0" layoutY="31.0" opacity="0.78" prefHeight="398.0" prefWidth="826.0">
+        <columns>
+          <TableColumn fx:id="TableName" prefWidth="112.0" text="Name" />
+          <TableColumn fx:id="TableID" prefWidth="86.0" text="ID" />
+            <TableColumn fx:id="TableTelNo" prefWidth="86.0" text="Tel no" />
+            <TableColumn fx:id="TableEMail" prefWidth="159.0" text="E-Mail" />
+            <TableColumn fx:id="TableMeals" prefWidth="120.0" text="Meals" />
+            <TableColumn fx:id="TableRooms" prefWidth="98.0" text="Room" />
+            <TableColumn fx:id="TableAddress" prefWidth="159.0" text="Address" />
+        </columns>
+      </TableView>
+      <Button layoutX="715.0" layoutY="485.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="43.0" prefWidth="89.0" style="-fx-background-color: #3c40c6; -fx-background-radius: 30;" text="Delete" textAlignment="CENTER" textFill="#f2f2f2">
+         <font>
+            <Font name="Rockwell Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="483.0" layoutY="548.0" text="If you want edit Coustomer double click on Row" textFill="#e8dcdc">
+         <font>
+            <Font name="Rockwell Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="83.0" layoutY="442.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="43.0" prefWidth="81.0" style="-fx-background-color: #0be881; -fx-background-radius: 30;" text="Back" textAlignment="CENTER" textFill="#f5f4f4">
+         <font>
+            <Font name="Rockwell Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="102.0" layoutY="494.0" mnemonicParsing="false" onAction="#roomOnAction" prefHeight="43.0" prefWidth="101.0" style="-fx-background-color: #0be881; -fx-background-radius: 30;" text="Rooms" textAlignment="CENTER" textFill="#f5f4f4">
+         <font>
+            <Font name="Rockwell Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="137.0" layoutY="547.0" mnemonicParsing="false" onAction="#mealsOnAction" prefHeight="43.0" prefWidth="101.0" style="-fx-background-color: #0be881; -fx-background-radius: 30;" text="Meals" textAlignment="CENTER" textFill="#f5f4f4">
+         <font>
+            <Font name="Rockwell Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #a4b0be;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainFormController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/4.jpg" />
+         </image></ImageView>
+      <Pane layoutX="548.0" layoutY="93.0" prefHeight="464.0" prefWidth="289.0" style="-fx-background-color: #a4b0be; -fx-background-radius: 40;">
+         <children>
+            <Text layoutX="14.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" wrappingWidth="137.6708984375">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtName" layoutX="46.0" layoutY="84.0" prefHeight="31.0" prefWidth="209.0" promptText="Enter Name" />
+            <Text layoutX="14.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="137.6708984375">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="txtPassword" layoutX="46.0" layoutY="242.0" prefHeight="31.0" prefWidth="209.0" promptText="Enter Password" />
+            <Button layoutX="105.0" layoutY="313.0" mnemonicParsing="false" onAction="#AdminOnClick" style="-fx-background-color: #25CCF7; -fx-background-radius: 30;" text="Admin">
+               <font>
+                  <Font name="Rockwell Bold" size="17.0" />
+               </font>
+            </Button>
+            <Text layoutX="125.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" wrappingWidth="39.6708984375">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="92.0" layoutY="405.0" mnemonicParsing="false" onAction="#ReceptionistOnClick" style="-fx-background-color: #25CCF7; -fx-background-radius: 30;" text="Receptionist">
+               <font>
+                  <Font name="Rockwell" size="17.0" />
+               </font>
+            </Button>
+            <Label fx:id="labId" layoutX="7.0" layoutY="136.0" prefHeight="32.0" prefWidth="276.0" textFill="#dd0808">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="49.0" layoutY="542.0" mnemonicParsing="false" onAction="#PackagesOnClick" text="Packages">
+         <font>
+            <Font name="Rockwell" size="17.0" />
+         </font>
+      </Button>
+      <Text fill="#1b1a1a" layoutX="138.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Blue Ocean Hotel...!!" textAlignment="CENTER" wrappingWidth="409.99998950213194">
+         <font>
+            <Font name="Magneto Bold" size="56.0" />
+         </font>
+      </Text>
+      <ImageView blendMode="MULTIPLY" fitHeight="150.0" fitWidth="200.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/8.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

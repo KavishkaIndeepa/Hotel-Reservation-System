@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CancelBookingController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/6.png" />
+         </image></ImageView>
+      <Pane layoutX="301.0" layoutY="118.0" prefHeight="336.0" prefWidth="298.0" style="-fx-background-color: #4bcffa; -fx-background-radius: 30;">
+         <children>
+            <Text layoutX="44.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cancel Booking " wrappingWidth="209.61865234375">
+               <font>
+                  <Font name="Rockwell" size="27.0" />
+               </font>
+            </Text>
+            <Button layoutX="197.0" layoutY="277.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="38.0" prefWidth="84.0" style="-fx-background-color: #3c40c6; -fx-background-radius: 30;" text="Delete" textFill="#ebe3e3">
+               <font>
+                  <Font name="Stencil" size="15.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Button layoutX="686.0" layoutY="514.0" mnemonicParsing="false" onAction="#cancelBookingOkOnAction" prefHeight="53.0" prefWidth="84.0" style="-fx-background-color: #0be881; -fx-background-radius: 30;" text="OK" textFill="#f5eded">
+         <font>
+            <Font name="Rockwell Bold" size="15.0" />
+         </font></Button>
+      <ImageView blendMode="MULTIPLY" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/8.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
